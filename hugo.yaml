@@ -1,0 +1,39 @@
+baseURL: "https://starspunworks.com/"
+title: "Starspun Works"
+locale: "en"
+
+enableRobotsTXT: true
+disableKinds: [taxonomy, term, rss]
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  description: "Starspun Works supports the Open Gensokyo Network open protocol project."
+
+  navbar:
+    displayTitle: true
+    displayLogo: false
+    width: normal
+
+  theme:
+    default: system
+    displayToggle: true
+
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: false
+    width: normal
+
+  search:
+    enable: false
+
+  editURL:
+    enable: false
